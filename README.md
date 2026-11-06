@@ -13,6 +13,9 @@ A fictional internet packed with absurd websites, strange organizations, mini-ga
 - **Secret websites** — unlock the Digital Backrooms and Potato Moon Forum through exploration and NPC relationships.
 - **NPC relationships** — build trust with recurring characters through dialogue choices.
 - **Quest Board** — complete cross-site objectives and claim shared coin and XP rewards.
+- **Questionable Shop** — spend earned coins on collectibles, tools and wearable items.
+- **Local Bazaar** — sell inventory items for coins through a simple player economy.
+- **Character Jobs** — complete relationship- and mystery-based requests for unique item, coin and XP rewards.
 - **NPC Life** — meet characters and choose from five dialogue responses.
 - **PigeonBook** — publish silly posts to a locally saved fictional social feed.
 - **Ministry of Useless Affairs** — apply for completely unnecessary permits.
@@ -56,7 +59,7 @@ The social feed and all characters are fictional. PigeonBook posts are stored lo
 
 ## Project status
 
-The project is an expanding interconnected universe. Its shared progression engine links websites through quests, daily events, currency, XP, inventory, achievements, character relationships, mystery clues, and unlockable secret destinations. All progress remains local to the browser; this is a single-player simulation, not online multiplayer. New districts, websites, characters, and events can be added incrementally while keeping the project static and GitHub Pages compatible.
+The project is an expanding interconnected universe. Its shared progression engine links websites through quests, daily events, currency, XP, inventory, achievements, character relationships, mystery clues, unlockable secret destinations, shop purchases, bazaar sales, and character-specific jobs. All progress remains local to the browser; this is a single-player simulation, not online multiplayer. New districts, websites, characters, and events can be added incrementally while keeping the project static and GitHub Pages compatible.
 
 ## License
 
