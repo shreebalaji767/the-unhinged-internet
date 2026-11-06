@@ -7,6 +7,8 @@ A fictional internet packed with absurd websites, strange organizations, mini-ga
 ## What's included
 
 - **Home portal** — the gateway to the fictional internet.
+- **Shared visual identity** — one custom SVG logo is used in the header, browser favicon, and installable app icon.
+- **PWA installation** — use the Install App button when the browser supports installation; other browsers show their manual install steps.
 - **Explore** — browse and live-search the universe's districts and planned destinations.
 - **Tiny Arcade** — play the timed Crumb Catcher mini-game, trigger random chaos events, and use portal roulette.
 - **Interactive borough map** — click buildings to travel and search for hidden objects.
