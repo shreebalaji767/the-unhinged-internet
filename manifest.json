@@ -5,5 +5,14 @@
   "display": "standalone",
   "background_color": "#11131b",
   "theme_color": "#171923",
-  "description": "A fictional internet full of questionable websites and games."
+  "description": "A fictional internet full of questionable websites and games.",
+  "icons": [
+    {
+      "src": "./logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "scope": "./"
 }
