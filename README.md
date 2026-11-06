@@ -9,6 +9,11 @@ A fictional internet packed with absurd websites, strange organizations, mini-ga
 - **Home portal** — the gateway to the fictional internet.
 - **Explore** — browse and live-search the universe's districts and planned destinations.
 - **Tiny Arcade** — play the timed Crumb Catcher mini-game, trigger random chaos events, and use portal roulette.
+- **Interactive borough map** — click buildings to travel and search for hidden objects.
+- **Questionable Pets** — adopt companions and choose which one follows you.
+- **Crumb Cup** — compete in a three-round timed arcade tournament.
+- **NPC memory and random encounters** — recurring characters remember prior dialogue choices; surprise encounters award items and rewards.
+- **Seasonal world atmosphere** — in-game days rotate through four absurd seasons and changing weather.
 - **World Hub** — view shared world status, recurring characters, and the daily anomaly event.
 - **Mystery storyline** — investigate the cross-site Case of the Missing Crumb and collect clues from three existing websites.
 - **Secret websites** — unlock the Digital Backrooms and Potato Moon Forum through exploration and NPC relationships.
