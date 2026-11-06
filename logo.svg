@@ -1,10 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
-<title id="title">The Unhinged Internet</title>
-<rect width="256" height="256" rx="58" fill="#171923"/>
-<path d="M128 13 153 83 224 49 190 120 244 157 168 164 180 241 128 188 76 241 88 164 12 157 66 120 32 49 103 83Z" fill="#c7ff65"/>
-<circle cx="128" cy="128" r="49" fill="#171923"/>
-<circle cx="128" cy="128" r="34" fill="#ff83bd"/>
-<circle cx="128" cy="128" r="17" fill="#171923"/>
-<path d="m121 128 7-18 7 18-7 18Z" fill="#c7ff65"/>
-<path d="m190 43 5 13 13 5-13 5-5 13-5-13-13-5 13-5Z" fill="#82cfff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">The Unhinged Internet</title>
+  <desc id="desc">A bright, chaotic portal swirling through a dark internet universe.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#303a55"/>
+      <stop offset="1" stop-color="#11131b"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e5ff91"/>
+      <stop offset="1" stop-color="#9be83d"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a7e7ff"/>
+      <stop offset="1" stop-color="#65b8ff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#bg)" stroke="#56617b" stroke-width="2"/>
+  <circle cx="64" cy="64" r="45" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="1.5" stroke-dasharray="3 7"/>
+  <path d="M64 17a47 47 0 1 1-33.2 13.8" fill="none" stroke="url(#lime)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M31 51c5-17 24-27 42-21 16 5 26 22 21 38-4 14-17 23-31 21-12-2-20-13-18-25 2-10 11-17 21-15 8 1 13 9 11 17-1 5-6 9-11 8" fill="none" stroke="url(#blue)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M65 44l5 12 13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1z" fill="#ff83bd" stroke="#171923" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="100" cy="29" r="5" fill="#ffd36e"/>
+  <path d="M24 91l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#c7ff65"/>
+  <circle cx="99" cy="91" r="3" fill="#82cfff"/>
 </svg>
