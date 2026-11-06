@@ -1,4 +1,4 @@
-const CACHE='unhinged-v16';
+const CACHE='unhinged-v17';
 const CACHE_PREFIX='unhinged-';
 const FILES=['./','./index.html','./manifest.json','./logo.svg','./favicon.svg'];
 
