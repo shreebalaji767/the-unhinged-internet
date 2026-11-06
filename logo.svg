@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+<title id="title">The Unhinged Internet</title>
+<rect width="256" height="256" rx="58" fill="#171923"/>
+<path d="M128 13 153 83 224 49 190 120 244 157 168 164 180 241 128 188 76 241 88 164 12 157 66 120 32 49 103 83Z" fill="#c7ff65"/>
+<circle cx="128" cy="128" r="49" fill="#171923"/>
+<circle cx="128" cy="128" r="34" fill="#ff83bd"/>
+<circle cx="128" cy="128" r="17" fill="#171923"/>
+<path d="m121 128 7-18 7 18-7 18Z" fill="#c7ff65"/>
+<path d="m190 43 5 13 13 5-13 5-5 13-5-13-13-5 13-5Z" fill="#82cfff"/>
+</svg>
