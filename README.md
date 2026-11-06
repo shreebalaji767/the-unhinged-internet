@@ -9,6 +9,9 @@ A fictional internet packed with absurd websites, strange organizations, mini-ga
 - **Home portal** — the gateway to the fictional internet.
 - **Explore** — browse the universe's districts and planned destinations.
 - **World Hub** — view shared world status, recurring characters, and the daily anomaly event.
+- **Mystery storyline** — investigate the cross-site Case of the Missing Crumb and collect clues from three existing websites.
+- **Secret websites** — unlock the Digital Backrooms and Potato Moon Forum through exploration and NPC relationships.
+- **NPC relationships** — build trust with recurring characters through dialogue choices.
 - **Quest Board** — complete cross-site objectives and claim shared coin and XP rewards.
 - **NPC Life** — meet characters and choose from five dialogue responses.
 - **PigeonBook** — publish silly posts to a locally saved fictional social feed.
@@ -53,7 +56,7 @@ The social feed and all characters are fictional. PigeonBook posts are stored lo
 
 ## Project status
 
-The project is an expanding interconnected universe. Its shared progression engine links the existing websites through quests, daily events, currency, XP, inventory, and achievements. New districts, websites, characters, and events can be added incrementally while keeping the project static and GitHub Pages compatible.
+The project is an expanding interconnected universe. Its shared progression engine links websites through quests, daily events, currency, XP, inventory, achievements, character relationships, mystery clues, and unlockable secret destinations. All progress remains local to the browser; this is a single-player simulation, not online multiplayer. New districts, websites, characters, and events can be added incrementally while keeping the project static and GitHub Pages compatible.
 
 ## License
 
