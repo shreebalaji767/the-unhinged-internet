@@ -8,11 +8,14 @@ A fictional internet packed with absurd websites, strange organizations, mini-ga
 
 - **Home portal** — the gateway to the fictional internet.
 - **Explore** — browse the universe's districts and planned destinations.
+- **World Hub** — view shared world status, recurring characters, and the daily anomaly event.
+- **Quest Board** — complete cross-site objectives and claim shared coin and XP rewards.
 - **NPC Life** — meet characters and choose from five dialogue responses.
 - **PigeonBook** — publish silly posts to a locally saved fictional social feed.
 - **Ministry of Useless Affairs** — apply for completely unnecessary permits.
 - **Fake Internet 1999** — explore simulated retro web pages.
 - **Player profile** — keep a display name, coins, experience, reputation, inventory, and achievements.
+- **Shared progression** — NPC conversations, posts, permits, work shifts, and unique destinations contribute to common quest progress.
 - **Local save and backup** — progress is saved in the current browser and can be exported as JSON.
 
 ## Technology
@@ -50,7 +53,7 @@ The social feed and all characters are fictional. PigeonBook posts are stored lo
 
 ## Project status
 
-This is the starter release of a larger interconnected universe. New districts, websites, characters, quests, and shared events can be added incrementally while keeping the project static and GitHub Pages compatible.
+The project is an expanding interconnected universe. Its shared progression engine links the existing websites through quests, daily events, currency, XP, inventory, and achievements. New districts, websites, characters, and events can be added incrementally while keeping the project static and GitHub Pages compatible.
 
 ## License
 
