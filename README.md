@@ -7,7 +7,8 @@ A fictional internet packed with absurd websites, strange organizations, mini-ga
 ## What's included
 
 - **Home portal** — the gateway to the fictional internet.
-- **Explore** — browse the universe's districts and planned destinations.
+- **Explore** — browse and live-search the universe's districts and planned destinations.
+- **Tiny Arcade** — play the timed Crumb Catcher mini-game, trigger random chaos events, and use portal roulette.
 - **World Hub** — view shared world status, recurring characters, and the daily anomaly event.
 - **Mystery storyline** — investigate the cross-site Case of the Missing Crumb and collect clues from three existing websites.
 - **Secret websites** — unlock the Digital Backrooms and Potato Moon Forum through exploration and NPC relationships.
