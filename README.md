@@ -1,1 +1,57 @@
-# The Unhinged Internet\n\nA fictional interconnected internet of absurd websites, games and organizations. Built with vanilla HTML, CSS and JavaScript for free GitHub Pages hosting.\n\n## Current starter features\n- Main portal and district directory\n- NPC Life dialogue simulator with five choices per encounter\n- PigeonBook local social feed\n- Ministry of Useless Affairs permit mini-site\n- Fake Internet 1999 simulated browser\n- Shared local player profile, coins, XP, inventory and achievements\n- Local save, JSON export and reset\n- Responsive layout and basic offline caching\n\n## Deploy on GitHub Pages\n1. Open repository Settings → Pages.\n2. Under Build and deployment, choose **GitHub Actions** as the source.\n3. The included workflow deploys automatically on every push to `main`.\n4. Wait for the first successful Actions run and visit `https://shreebalaji767.github.io/the-unhinged-internet/`.\n\nNo build step, framework, backend, external API, paid service or advertising is required. Progress is stored in the current browser; it does not synchronize across devices. Export a save file before clearing browser data.\n\n## Development\nThe first milestone is a compact static foundation. Additional websites and game systems can be added as independent modules while preserving the shared universe save format.\n
+# The Unhinged Internet
+
+A fictional internet packed with absurd websites, strange organizations, mini-games, and questionable decisions.
+
+**Live site:** https://shreebalaji767.github.io/the-unhinged-internet/
+
+## What's included
+
+- **Home portal** — the gateway to the fictional internet.
+- **Explore** — browse the universe's districts and planned destinations.
+- **NPC Life** — meet characters and choose from five dialogue responses.
+- **PigeonBook** — publish silly posts to a locally saved fictional social feed.
+- **Ministry of Useless Affairs** — apply for completely unnecessary permits.
+- **Fake Internet 1999** — explore simulated retro web pages.
+- **Player profile** — keep a display name, coins, experience, reputation, inventory, and achievements.
+- **Local save and backup** — progress is saved in the current browser and can be exported as JSON.
+
+## Technology
+
+- HTML
+- CSS
+- Vanilla JavaScript
+- LocalStorage for player progress
+- Service Worker for basic offline caching
+- GitHub Pages for free static hosting
+
+No framework, backend, database server, paid API, subscription, or advertising network is required.
+
+## Run locally
+
+1. Clone or download this repository.
+2. Open `index.html` in a browser.
+
+For service-worker and offline testing, serve the folder through a local static HTTP server. Service workers do not run reliably from a `file://` URL.
+
+## GitHub Pages deployment
+
+The repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml`.
+
+1. Open **Settings → Pages** in the GitHub repository.
+2. Set the deployment source to **GitHub Actions**.
+3. Push changes to the `main` branch, or run the workflow manually from the **Actions** tab.
+4. After a successful deployment, visit the live site linked above.
+
+## Saving and privacy
+
+Player progress is stored in LocalStorage in the browser being used. It does not automatically sync between browsers or devices. Use **Export save file** in the player profile to keep a backup before clearing browser data.
+
+The social feed and all characters are fictional. PigeonBook posts are stored locally and are not published to a shared online service.
+
+## Project status
+
+This is the starter release of a larger interconnected universe. New districts, websites, characters, quests, and shared events can be added incrementally while keeping the project static and GitHub Pages compatible.
+
+## License
+
+No license has been specified yet.
