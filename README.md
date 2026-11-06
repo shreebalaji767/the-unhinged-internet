@@ -59,7 +59,7 @@ The social feed and all characters are fictional. PigeonBook posts are stored lo
 
 ## Project status
 
-The project is an expanding interconnected universe. Its shared progression engine links websites through quests, daily events, currency, XP, inventory, achievements, character relationships, mystery clues, unlockable secret destinations, shop purchases, bazaar sales, and character-specific jobs. All progress remains local to the browser; this is a single-player simulation, not online multiplayer. New districts, websites, characters, and events can be added incrementally while keeping the project static and GitHub Pages compatible.
+The project is an expanding interconnected universe. Its shared progression engine links websites through quests, daily events, currency, XP, inventory, achievements, character relationships, mystery clues, unlockable secret destinations, shop purchases, bazaar sales, character-specific jobs, arcade scores, and random-event rewards. All progress remains local to the browser; this is a single-player simulation, not online multiplayer. New districts, websites, characters, and events can be added incrementally while keeping the project static and GitHub Pages compatible.
 
 ## License
 
