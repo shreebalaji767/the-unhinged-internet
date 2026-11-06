@@ -1,30 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
   <title id="title">The Unhinged Internet</title>
-  <desc id="desc">A bright, chaotic portal swirling through a dark internet universe.</desc>
+  <desc id="desc">A luminous cyan, violet and magenta swirling portal with a white star at its centre, on a transparent background.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#303a55"/>
-      <stop offset="1" stop-color="#11131b"/>
+    <linearGradient id="swirl" x1="18" y1="38" x2="111" y2="91" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#20f4f2"/>
+      <stop offset=".48" stop-color="#8b59ff"/>
+      <stop offset="1" stop-color="#ff43cb"/>
     </linearGradient>
-    <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#e5ff91"/>
-      <stop offset="1" stop-color="#9be83d"/>
+    <linearGradient id="swirl2" x1="28" y1="25" x2="99" y2="105" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#27e9f4"/>
+      <stop offset=".55" stop-color="#a34dff"/>
+      <stop offset="1" stop-color="#ff54c9"/>
     </linearGradient>
-    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#a7e7ff"/>
-      <stop offset="1" stop-color="#65b8ff"/>
-    </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="neon" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect x="4" y="4" width="120" height="120" rx="30" fill="url(#bg)" stroke="#56617b" stroke-width="2"/>
-  <circle cx="64" cy="64" r="45" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="1.5" stroke-dasharray="3 7"/>
-  <path d="M64 17a47 47 0 1 1-33.2 13.8" fill="none" stroke="url(#lime)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
-  <path d="M31 51c5-17 24-27 42-21 16 5 26 22 21 38-4 14-17 23-31 21-12-2-20-13-18-25 2-10 11-17 21-15 8 1 13 9 11 17-1 5-6 9-11 8" fill="none" stroke="url(#blue)" stroke-width="7" stroke-linecap="round"/>
-  <path d="M65 44l5 12 13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1z" fill="#ff83bd" stroke="#171923" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="100" cy="29" r="5" fill="#ffd36e"/>
-  <path d="M24 91l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#c7ff65"/>
-  <circle cx="99" cy="91" r="3" fill="#82cfff"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon)">
+    <path d="M64 13 C91 13 112 34 112 60 C112 85 94 107 70 112 C47 117 24 103 17 82 C10 61 20 38 39 26 C57 14 81 17 96 32" stroke="url(#swirl)" stroke-width="2.8"/>
+    <path d="M64 17 C42 17 25 34 25 55 C25 76 40 92 59 95 C77 98 94 85 98 67 C102 50 91 34 76 29 C61 24 45 32 41 46 C37 59 45 72 57 76" stroke="url(#swirl2)" stroke-width="2.6"/>
+    <path d="M64 26 C84 26 101 42 101 62 C101 82 85 98 66 100 C47 102 31 88 29 70 C27 53 39 38 55 35 C70 32 84 42 87 56 C90 70 81 82 69 85" stroke="url(#swirl)" stroke-width="2.5"/>
+    <path d="M64 40 C77 40 88 50 88 63 C88 76 78 87 65 88 C53 89 42 80 41 68 C40 57 48 48 58 47" stroke="url(#swirl2)" stroke-width="2.3"/>
+  </g>
+  <path d="M64 43 C67 55 72 60 84 64 C72 68 67 73 64 85 C61 73 56 68 44 64 C56 60 61 55 64 43Z" fill="#fff8ef" filter="url(#neon)"/>
 </svg>
