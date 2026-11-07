@@ -542,6 +542,51 @@ button:focus-visible,a:focus-visible,[role="button"]:focus-visible,[role="link"]
  .stat-update{animation:none!important}
  #app .bar span{transition:none!important}
 }
+
+/* Motion upgrade: playful micro-interactions across existing screens. */
+#app .card,#app .box{
+  transform-origin:50% 75%;
+  backface-visibility:hidden;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  #app .card{transition:transform .24s cubic-bezier(.2,.8,.2,1),box-shadow .24s ease,border-color .24s ease}
+  #app .card:hover{transform:translateY(-5px) scale(1.008);box-shadow:0 15px 32px rgba(40,91,67,.12);border-color:rgba(83,157,119,.42)}
+  #app .card:hover .emoji{animation:emoji-wiggle .55s ease-in-out}
+  #app .maptile{transition:transform .22s ease,box-shadow .22s ease}
+  #app .maptile:hover{transform:translateY(-5px) rotate(-1deg);box-shadow:0 12px 22px rgba(40,91,67,.13)}
+}
+@keyframes emoji-wiggle{0%,100%{transform:rotate(0) scale(1)}25%{transform:rotate(-9deg) scale(1.12)}55%{transform:rotate(7deg) scale(1.08)}}
+#app .maptile{animation:tile-arrive .48s cubic-bezier(.2,.8,.2,1) both}
+#app .mapboard .maptile:nth-child(2){animation-delay:.04s}
+#app .mapboard .maptile:nth-child(3){animation-delay:.08s}
+#app .mapboard .maptile:nth-child(4){animation-delay:.12s}
+#app .mapboard .maptile:nth-child(5){animation-delay:.16s}
+#app .mapboard .maptile:nth-child(6){animation-delay:.20s}
+#app .mapboard .maptile:nth-child(7){animation-delay:.24s}
+#app .mapboard .maptile:nth-child(8){animation-delay:.28s}
+#app .mapboard .maptile:nth-child(9){animation-delay:.32s}
+@keyframes tile-arrive{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+#app .game-target:not(:disabled){animation:crumb-bob 1.35s ease-in-out infinite}
+@keyframes crumb-bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-5px) rotate(4deg)}}
+#app .game-target:active{animation:crumb-pop .18s ease-out}
+@keyframes crumb-pop{50%{transform:scale(1.2) rotate(8deg)}}
+#app .sectionhead h2{position:relative}
+#app .sectionhead h2::after{content:"";display:block;width:34px;height:3px;margin-top:6px;border-radius:9px;background:var(--accent);transform-origin:left;animation:underline-grow .5s .12s both}
+@keyframes underline-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+#toast:not(.hidden){animation:toast-spring .38s cubic-bezier(.18,1.35,.35,1) both}
+@keyframes toast-spring{0%{opacity:0;transform:translate(-50%,18px) scale(.92)}75%{opacity:1;transform:translate(-50%,-2px) scale(1.015)}100%{opacity:1;transform:translate(-50%,0) scale(1)}}
+#app .bar span{position:relative;overflow:hidden}
+#app .bar span::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 20%,rgba(255,255,255,.35) 48%,transparent 72%);transform:translateX(-120%);animation:progress-glint 3.8s ease-in-out infinite}
+@keyframes progress-glint{0%,65%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+#app .choice,#app .btn,#app .nav button{transition:transform .16s ease,box-shadow .2s ease,background-color .2s ease}
+#app .choice:active,#app .btn:active,#app .nav button:active{transform:scale(.965)}
+@media(prefers-reduced-motion:reduce){
+ #app .maptile,#app .game-target:not(:disabled),#app .sectionhead h2::after,#app .bar span::after{animation:none!important}
+ #toast:not(.hidden){animation:none!important}
+ #app .card:hover,#app .maptile:hover{transform:none!important}
+ #app .card:hover .emoji{animation:none!important}
+ #app .choice,#app .btn,#app .nav button,#app .maptile,#app .card{transition:none!important}
+}
 </style>
 </head>
 <body><a class="skip-link" href="#app">Skip to content</a><div class="shell">
