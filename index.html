@@ -148,6 +148,168 @@ pre,code{overflow-wrap:anywhere;white-space:pre-wrap}
 .stat-hint{font-size:9px;font-weight:900;letter-spacing:.7px;color:var(--muted);margin-left:3px}
 @media(max-width:540px){.stat-hint{display:none}.stats{gap:6px}.stat-chip{padding:8px 10px}}
 
+
+
+/* Fresh interface refresh: airy surfaces, calm colors, clearer hierarchy. */
+:root{
+  --bg:#f3f7f5;--panel:#ffffff;--panel2:#edf4f1;--ink:#20312e;--muted:#687b76;
+  --line:#dce8e2;--accent:#167d68;--pink:#c35d86;--blue:#287da0;--yellow:#b87820;
+  --shadow:0 14px 38px rgba(34,67,57,.09);
+  color-scheme:light;
+}
+html{background:var(--bg);scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(ellipse at 5% 0%,rgba(158,218,194,.25),transparent 34%),
+    radial-gradient(ellipse at 96% 12%,rgba(186,216,236,.23),transparent 30%),
+    var(--bg);
+  color:var(--ink);
+}
+.shell{max-width:1480px}
+.top{
+  background:rgba(255,255,255,.88);border-color:rgba(207,224,215,.9);
+  border-radius:20px;box-shadow:0 8px 28px rgba(40,76,63,.07);
+}
+.brand{color:#203b34}
+.brand small{color:#71847d}
+.logo{filter:none}
+.stats{gap:8px}
+.chip,.stat-chip{
+  background:#f5faf7;border-color:#dce9e2;color:#31564a;
+}
+.stat-chip:hover{background:#eaf5ef;border-color:#9bcdb8}
+.stat-hint{color:#668278}
+.nav{
+  padding:13px 3px 15px;gap:8px;
+  scrollbar-color:#bfd5ca transparent;
+}
+.nav button,.btn{
+  border:1px solid #dce8e2;background:#fff;color:#315149;
+  border-radius:12px;box-shadow:0 2px 7px rgba(34,67,57,.035);
+  transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.nav button{padding:10px 15px}
+.nav button.active,.btn.primary{
+  background:#176f5d;color:#fff;border-color:#176f5d;
+  box-shadow:0 5px 14px rgba(23,111,93,.18);
+}
+.nav button.active{box-shadow:0 4px 12px rgba(23,111,93,.15)}
+.btn:hover,.nav button:hover{
+  transform:translateY(-2px);border-color:#8dbfa9;
+  box-shadow:0 7px 17px rgba(34,90,69,.1);
+}
+.btn.primary:hover,.nav button.active:hover{background:#125c4d;border-color:#125c4d}
+.install-btn{background:linear-gradient(135deg,#d8f4e5,#bce8d0)!important;color:#174c3e!important;border-color:#b7dfca!important;box-shadow:0 4px 13px rgba(52,132,97,.12)!important}
+.install-btn:hover{filter:brightness(1.02);box-shadow:0 7px 18px rgba(52,132,97,.2)!important}
+main{min-height:68vh}
+.hero{
+  border:1px solid #d8e8df;border-radius:26px;
+  background:linear-gradient(125deg,#e3f5eb 0%,#eaf4f5 55%,#f2effa 100%);
+  box-shadow:0 14px 36px rgba(49,105,80,.08);
+}
+.hero:after{color:rgba(37,119,91,.055)}
+.eyebrow,.tag{color:#19745e}
+.hero h1,.pagehead h1{color:#203b34;letter-spacing:-.045em}
+.hero p{color:#58716a}
+.pagehead{padding-top:30px}
+.pagehead h1{font-size:clamp(32px,5vw,52px)}
+.sectionhead{margin-top:34px}
+.sectionhead h2{letter-spacing:-.035em;color:#29473e}
+.grid{gap:16px}
+.card,.box{
+  background:#fff;border:1px solid #e0ebe5;border-radius:19px;
+  box-shadow:0 5px 18px rgba(37,77,60,.045);
+}
+.card{padding:19px;transition:transform .24s cubic-bezier(.2,.75,.25,1),box-shadow .24s,border-color .24s}
+.card:hover{
+  transform:translateY(-5px);border-color:#a8d1bd;
+  box-shadow:0 14px 28px rgba(37,77,60,.10);
+}
+.card h3,.box h2,.box h3{color:#29473e;letter-spacing:-.02em}
+.card p,.muted{color:#71827c}
+.box{padding:21px}
+.choice{
+  background:#f6faf8;color:#29473e;border-color:#e0ebe5;border-radius:13px;
+  transition:background .18s,border-color .18s,transform .18s,box-shadow .18s;
+}
+.choice:hover{background:#edf7f1;border-color:#9bcbb2;box-shadow:0 5px 14px rgba(36,104,75,.07)}
+.field,.searchbox, input:not([type=checkbox]):not([type=radio]),select,textarea{
+  background:#fbfdfc;color:#203b34;border-color:#d5e4dc;border-radius:12px;
+}
+.field:focus,.searchbox:focus,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  border-color:#4caa86;box-shadow:0 0 0 4px rgba(76,170,134,.13);outline:none;
+}
+.bar{background:#e5eee9}
+.bar span{background:linear-gradient(90deg,#16816a,#6bbd91);border-radius:99px}
+.profile .avatar{background:#e5f4eb;color:#176f5d;border:1px solid #cce7d8}
+.memory{background:#fff3f7;border-left-color:#c35d86;color:#704258}
+.notice{background:#fff8e9;color:#72562e;border-left-color:#d39b43}
+.feeditem{border-color:#e7eee9}
+.maptile{
+  background:linear-gradient(145deg,#f0f8f3,#eaf3f6);color:#29473e;border-color:#d9e8df;
+  border-radius:16px;transition:transform .2s,border-color .2s,box-shadow .2s;
+}
+.maptile:hover{border-color:#8ebfa7;box-shadow:0 7px 16px rgba(37,90,66,.09)}
+.maptile small{color:#6d8178}
+.pet-card.is-active{border-color:#63aa88;box-shadow:0 0 0 3px rgba(99,170,136,.13),0 12px 26px rgba(37,77,60,.08)}
+.gamearena{
+  background:radial-gradient(circle at 50% 35%,#e8f6ee,#eaf2f5);
+  border:1px solid #d4e5dc;border-radius:20px;color:#29473e;
+}
+.game-stat{background:#fff;border-color:#dce9e2;color:#31564a;border-radius:13px}
+.crumb-playfield{
+  background:linear-gradient(135deg,#eff8f2,#eaf4f8);
+  border-color:#a9cbbb;border-radius:18px;
+}
+.portal-empty{border-color:#c9ddd2;background:#fbfdfc}
+.footer{border-color:#dce8e2;color:#71827c}
+.toast{background:#176f5d;color:#fff;box-shadow:0 12px 30px rgba(22,92,73,.22)}
+#toast{border:1px solid rgba(255,255,255,.22)}
+/* The intentionally loud fake-ad landing page remains a playful visual contrast. */
+.ad-disclaimer{color:#71827c}
+.ad-landing .ad-marquee,.ad-landing .ad-billboard,.ad-landing .ad-tile,.ad-landing .ad-ticket{box-shadow:6px 6px 0 #20312e}
+.ad-landing .ad-billboard{border-radius:7px}
+.ad-landing .ad-tile{border-radius:5px}
+.ad-landing .ad-ticket{border-radius:4px}
+
+/* Gentle motion: content settles in, cards lift, and controls respond. */
+@keyframes fresh-enter{
+  from{opacity:0;transform:translateY(12px) scale(.99)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes soft-glow{
+  0%,100%{box-shadow:0 5px 18px rgba(37,77,60,.045)}
+  50%{box-shadow:0 9px 24px rgba(37,125,94,.10)}
+}
+#app{animation:fresh-enter .42s cubic-bezier(.2,.75,.25,1) both}
+#app .pagehead{animation:fresh-enter .45s .03s both}
+#app .hero{animation:fresh-enter .48s .04s both}
+#app .box,#app .card{animation: fresh-enter .42s both}
+#app .grid>.card:nth-child(2){animation-delay:.035s}
+#app .grid>.card:nth-child(3){animation-delay:.07s}
+#app .grid>.card:nth-child(4){animation-delay:.105s}
+#app .grid>.card:nth-child(5){animation-delay:.14s}
+#app .grid>.card:nth-child(6){animation-delay:.175s}
+.btn:active,.nav button:active,.choice:active,.maptile:active{transform:scale(.97)}
+.stat-chip:focus-visible,.btn:focus-visible,.nav button:focus-visible,.choice:focus-visible,.maptile:focus-visible{
+  outline:3px solid #63aa88;outline-offset:3px;
+}
+@media(max-width:700px){
+  .top{background:rgba(255,255,255,.96);box-shadow:0 5px 18px rgba(40,76,63,.06)}
+  .nav{padding-bottom:12px}
+  .box{padding:16px}
+  .card{padding:16px}
+}
+@media(max-width:480px){
+  .hero{background:linear-gradient(145deg,#e3f5eb,#eef5f6);box-shadow:0 8px 20px rgba(49,105,80,.07)}
+  .pagehead{padding-top:22px}
+  .nav button{border-radius:10px}
+  .stats .chip{background:#f5faf7}
+}
+@media(prefers-reduced-motion:reduce){
+  #app,#app .pagehead,#app .hero,#app .box,#app .card{animation:none!important}
+  .card,.btn,.nav button,.choice,.maptile,.stat-chip{transition:none!important}
+}
 </style>
 </head>
 <body><a class="skip-link" href="#app">Skip to content</a><div class="shell">
