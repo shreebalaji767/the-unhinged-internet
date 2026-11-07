@@ -636,6 +636,45 @@ button:focus-visible,a:focus-visible,[role="button"]:focus-visible,[role="link"]
  #app .feeditem,#app .like-btn[aria-pressed=true],#app .pet-card:hover .pet,#app .pet-card:hover .pet-emoji,
  #app .gamearena::before,#app .achievement,#app .achievement-card,#app .notice,#app .hero .eyebrow,#app .hero h1{animation:none!important}
 }
+
+/* Unified page design: every existing destination uses the same site-wide visual language. */
+#app{color:var(--ink);font-family:inherit}
+#app .retro{
+  color:var(--ink);background:#fff;border:1px solid #dce9e2;border-radius:20px;
+  box-shadow:0 5px 18px rgba(38,82,63,.045);padding:clamp(12px,2vw,20px);
+}
+#app .retro .windowbar{
+  color:#fff;background:linear-gradient(110deg,#176f5d,#2b8b78);
+  border-radius:12px;padding:11px 14px;font:700 14px/1.4 inherit;
+}
+#app .retro .inner{padding:clamp(12px,2vw,20px);color:var(--ink)}
+#app .retro button{
+  color:#315149;background:#fff;border:1px solid #dce8e2;border-radius:12px;
+  padding:9px 13px;min-height:42px;box-shadow:0 2px 7px rgba(34,67,57,.035);
+  transition:transform .18s ease,background .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+#app .retro button:hover{color:#176f5d;background:#f1f8f4;border-color:#9bcbb2;transform:translateY(-2px);box-shadow:0 7px 17px rgba(34,90,69,.1)}
+#app .retro a{color:#176f5d;text-underline-offset:3px}
+#app .retro a:hover{color:#105747}
+#app .retro input,#app .retro select,#app .retro textarea{
+  color:#203b34;background:#fbfdfc;border:1px solid #d5e4dc;border-radius:12px;padding:10px 12px;
+}
+#app .retro :focus-visible{outline:3px solid #58a987;outline-offset:3px}
+#app .retro hr{border:0;border-top:1px solid #e3eee8;margin:16px 0}
+#app .retro table{border-collapse:collapse;width:100%;color:var(--ink)}
+#app .retro th,#app .retro td{padding:9px;border-bottom:1px solid #e3eee8;text-align:left}
+#app .pagehead,#app .hero,#app .grid,#app .layout,#app .box{font-family:inherit}
+#app .pagehead h1,#app h2,#app h3{font-family:inherit}
+#app .box,#app .card{border-radius:20px}
+#app .choice,#app .btn,#app .maptile{font-family:inherit}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  #app .retro{animation:fresh-enter .38s cubic-bezier(.2,.75,.25,1) both}
+  #app .retro button:active{transform:scale(.97)}
+}
+@media(prefers-reduced-motion:reduce){
+  #app .retro,#app .retro button{animation:none!important;transition:none!important}
+}
+
 </style>
 </head>
 <body><a class="skip-link" href="#app">Skip to content</a><div class="shell">
