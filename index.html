@@ -310,6 +310,160 @@ main{min-height:68vh}
   #app,#app .pagehead,#app .hero,#app .box,#app .card{animation:none!important}
   .card,.btn,.nav button,.choice,.maptile,.stat-chip{transition:none!important}
 }
+
+/* Interface refresh v2 — crisp, calm, responsive, and lively without visual noise. */
+:root{
+  --bg:#f2f7f5;--panel:#ffffff;--panel2:#edf5f2;--ink:#1d3430;--muted:#687e77;
+  --line:#d9e7e0;--accent:#187b68;--pink:#bd6489;--blue:#347fa1;--yellow:#a96e1d;
+  --shadow:0 18px 48px rgba(34,75,61,.085);
+  color-scheme:light;
+}
+html{min-width:320px;background:#f2f7f5;scroll-behavior:smooth}
+body{
+  min-width:320px;color:var(--ink);
+  background:
+    radial-gradient(ellipse at 8% 2%,rgba(150,218,190,.25),transparent 31rem),
+    radial-gradient(ellipse at 95% 18%,rgba(171,207,232,.22),transparent 29rem),
+    linear-gradient(180deg,#f6faf8 0%,#f1f6f4 55%,#f7faf8 100%);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+.shell{width:min(100%,1500px);padding:clamp(9px,2.1vw,26px)}
+.top{
+  gap:12px;padding:clamp(11px,1.4vw,17px) clamp(12px,1.8vw,21px);
+  border:1px solid rgba(205,224,214,.95);border-radius:22px;
+  background:rgba(255,255,255,.91);box-shadow:0 9px 30px rgba(40,79,65,.075);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+}
+.brand{gap:12px;color:#1d4036;min-width:0}
+.logo{width:clamp(40px,4vw,49px);height:clamp(40px,4vw,49px);border-radius:15px}
+.brand small{color:#71877e}
+.stats{gap:7px;min-width:0}
+.chip,.stat-chip{
+  border:1px solid #dceae3;background:#f5faf7;color:#31594c;
+  border-radius:13px;padding:8px 11px;min-height:38px;
+}
+.stat-chip{transition:background .2s,border-color .2s,transform .2s,box-shadow .2s}
+.stat-chip:hover{background:#eaf6ef;border-color:#a6cfba;box-shadow:0 5px 13px rgba(35,105,75,.08);transform:translateY(-2px)}
+.stat-hint{color:#6c887c}
+.nav{
+  gap:8px;padding:14px 2px 17px;margin:0;
+  overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;
+  scrollbar-color:#bdd7c9 transparent;
+}
+.nav button{
+  flex:0 0 auto;min-height:42px;padding:10px 15px;
+  border:1px solid #dce9e2;border-radius:13px;background:rgba(255,255,255,.86);
+  color:#426257;font-weight:650;letter-spacing:.005em;
+  box-shadow:0 2px 8px rgba(37,78,61,.035);
+  transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.nav button.active,.btn.primary{
+  background:linear-gradient(135deg,#197b67,#246f65);border-color:#197b67;color:#fff;
+  box-shadow:0 6px 16px rgba(25,123,103,.19);
+}
+.nav button:hover,.btn:hover{
+  transform:translateY(-2px);border-color:#91c5aa;
+  box-shadow:0 7px 17px rgba(36,100,73,.10);
+}
+.nav button.active:hover,.btn.primary:hover{background:#176b5b;border-color:#176b5b}
+main{min-height:65vh;min-width:0}
+.hero{
+  padding:clamp(25px,4.2vw,52px) clamp(20px,3.5vw,38px);
+  border:1px solid #d4e8dc;border-radius:28px;
+  background:linear-gradient(125deg,#e1f4e9 0%,#e8f4f4 55%,#f0effa 100%);
+  box-shadow:0 16px 40px rgba(49,105,80,.085);
+}
+.hero h1{font-size:clamp(2.25rem,5.7vw,4.6rem);line-height:1.02;letter-spacing:-.055em;color:#1e4036}
+.hero p{max-width:65ch;color:#5b756b;line-height:1.7}
+.eyebrow,.tag{color:#19765f}
+.pagehead{padding:clamp(20px,3vw,34px) 0 18px}
+.pagehead h1{font-size:clamp(2rem,4.8vw,3.35rem);line-height:1.08;letter-spacing:-.05em;color:#203d35}
+.sectionhead{margin:clamp(24px,3vw,36px) 2px 14px}
+.sectionhead h2{font-size:clamp(1.2rem,2vw,1.55rem);letter-spacing:-.035em;color:#294b40}
+.grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:clamp(11px,1.5vw,17px)}
+.layout{grid-template-columns:minmax(0,1.55fr) minmax(250px,.8fr);gap:clamp(12px,1.6vw,18px)}
+.card,.box{
+  min-width:0;background:rgba(255,255,255,.96);border:1px solid #dfebe5;
+  border-radius:20px;box-shadow:0 5px 18px rgba(38,82,63,.045);
+}
+.card{padding:clamp(15px,1.7vw,21px);transition:transform .24s cubic-bezier(.2,.75,.25,1),box-shadow .24s,border-color .24s}
+.card:hover{transform:translateY(-4px);border-color:#a8d2bd;box-shadow:0 14px 30px rgba(37,77,60,.105)}
+.card h3,.box h2,.box h3{color:#29483e;letter-spacing:-.025em}
+.card p,.muted{color:#6e827a}
+.box{padding:clamp(15px,1.9vw,23px)}
+.choice{
+  border:1px solid #dfebe5;border-radius:14px;background:#f7fbf8;color:#2b4a40;
+  padding:clamp(12px,1.2vw,15px);transition:background .18s,border-color .18s,transform .18s,box-shadow .18s;
+}
+.choice:hover{background:#edf7f1;border-color:#a2cfb5;box-shadow:0 5px 14px rgba(36,104,75,.07);transform:translateX(2px)}
+.field,.searchbox,input:not([type=checkbox]):not([type=radio]),select,textarea{
+  max-width:100%;background:#fbfdfc;color:#203b34;border:1px solid #d5e4dc;border-radius:12px;
+}
+.field:focus,.searchbox:focus,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  border-color:#55a98a;box-shadow:0 0 0 4px rgba(76,170,134,.13);outline:none;
+}
+.btn{min-height:42px;border:1px solid #dce8e2;background:#fff;color:#315149;border-radius:12px;padding:10px 15px;font-weight:650}
+.install-btn{background:linear-gradient(135deg,#d9f4e5,#bce8d0)!important;color:#174c3e!important;border-color:#b7dfca!important}
+.bar{background:#e5eee9}.bar span{background:linear-gradient(90deg,#16816a,#72c49a);border-radius:99px}
+.gamearena{background:radial-gradient(circle at 50% 35%,#e8f6ee,#eaf2f5);border:1px solid #d4e5dc;border-radius:22px}
+.game-stat{background:#fff;border-color:#dce9e2;color:#31564a;border-radius:13px}
+.crumb-playfield{background:linear-gradient(135deg,#eff8f2,#eaf4f8);border-color:#a9cbbb;border-radius:19px}
+.maptile{background:linear-gradient(145deg,#f0f8f3,#eaf3f6);color:#29473e;border-color:#d9e8df;border-radius:17px}
+.maptile small{color:#6d8178}
+.footer{border-color:#dce8e2;color:#71827c}
+.toast{background:#176f5d;color:#fff;box-shadow:0 12px 30px rgba(22,92,73,.22)}
+#app{animation:refresh-arrive .38s cubic-bezier(.2,.75,.25,1) both}
+#app .pagehead{animation:refresh-arrive .42s .025s both}
+#app .hero{animation:refresh-arrive .45s .035s both}
+#app .box,#app .card{animation:refresh-arrive .38s both}
+#app .grid>*:nth-child(2){animation-delay:.035s}
+#app .grid>*:nth-child(3){animation-delay:.07s}
+#app .grid>*:nth-child(4){animation-delay:.105s}
+#app .grid>*:nth-child(5){animation-delay:.14s}
+#app .grid>*:nth-child(6){animation-delay:.175s}
+@keyframes refresh-arrive{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float-gentle{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.ad-landing .ad-sticker{animation:float-gentle 4s ease-in-out infinite}
+button:focus-visible,a:focus-visible,.card[role=link]:focus-visible{outline:3px solid #58a987;outline-offset:3px}
+button:active,.choice:active,.maptile:active{transform:scale(.98)}
+@media(min-width:1500px){.shell{padding-left:28px;padding-right:28px}.grid{gap:19px}}
+@media(max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .top{position:relative;top:auto}
+}
+@media(max-width:680px){
+  .shell{padding:10px}
+  .top{padding:11px;border-radius:17px;gap:9px}
+  .stats{width:100%;display:flex;flex-wrap:wrap}
+  .stats>*{flex:0 0 auto}
+  .nav{margin:0 -2px;padding:11px 2px 14px;gap:7px}
+  .nav button{min-height:44px;padding:10px 13px}
+  .hero{border-radius:21px}
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+}
+@media(max-width:430px){
+  .brand{gap:9px}
+  .brand small{font-size:10px}
+  .logo{width:39px;height:39px}
+  .stats{gap:6px}
+  .chip,.stat-chip{padding:7px 9px;font-size:11px;min-height:36px}
+  .stat-hint{display:none}
+  .hero{padding:24px 17px}
+  .hero h1{font-size:clamp(2rem,10vw,2.8rem);letter-spacing:-.045em}
+  .pagehead h1{font-size:clamp(1.85rem,9vw,2.55rem)}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .cardfoot{flex-wrap:wrap}
+  .cardfoot .btn{max-width:100%}
+  .box{padding:14px}
+  .actions .btn{flex:1 1 auto}
+}
+@media(prefers-reduced-motion:reduce){
+  #app,#app .pagehead,#app .hero,#app .box,#app .card,.ad-landing .ad-sticker{animation:none!important}
+  .card,.btn,.nav button,.choice,.maptile,.stat-chip{transition:none!important}
+  html{scroll-behavior:auto}
+}
 </style>
 </head>
 <body><a class="skip-link" href="#app">Skip to content</a><div class="shell">
